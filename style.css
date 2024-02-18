@@ -1,0 +1,161 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-background:#fff;
+    --color-font-dark:#000;
+    --color-font-light:#9e9e9e;
+    --color-font-verylight:#1a6380;
+    --color-blue-light:#a8d0e4;
+    --color-blue-dark:#163b85;
+    --color-btn:#1e9b90;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: vaziri;
+    background-color: var(--color-background);
+    font-size: 1.4rem;
+    font-family: Vazirmatn FD NL;
+}
+h1 {
+    font-size: 1.8rem;
+}
+a {
+    text-decoration: none;
+}
+button {
+    font-family: vaziri;
+}
+.container {
+    max-width: 1024px;
+    margin: 0;
+}
+.block {
+    padding: 5rem 3rem;
+}
+@font-face {
+    font-family: Vazirmatn FD NL;
+    src: url('/fonts/Vazirmatn-FD-NL-Medium.woff2') format('woff2');
+    font-weight: 300;
+  }
+  
+.app__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color-background);
+    padding: 2rem 2rem;
+    border-radius: 2px;
+    min-width: 370px;
+}
+
+.app__heading {
+    display: block;
+    margin: 2rem;
+    margin-bottom: 10rem;
+}
+.app__header {
+    font-weight: 900;
+}
+
+.card__items {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    justify-content: center;
+}
+.card__item {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 1.2rem 2rem;
+    width: 300px;
+}
+.card__item .item__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.item__header .item__id {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-blue-light);
+    border-radius: 6px;
+    color: var(--color-blue-dark);
+    text-align: center;
+    font-weight: 700;
+}
+.item__header .item__upload-doc {
+    flex: 1;
+    color: var(--color-blue-dark);
+    font-weight: 700;
+    margin-right: 0.8rem;
+}
+.item__header .item__date {
+    color: var(--color-font-light);
+   font-size: 1rem;
+    margin-right: 4rem;
+}
+.item__header .item__id {
+    color: var(--color-font-verylight);
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.item__number {
+    color: var(--color-font-light);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight:800;
+}
+.item__number span {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+ }
+ .request__item p {
+    font-size: 2rem;
+    font-family: "vazirmatn";
+    font-weight: 700;
+ }
+ .item__footer {
+    display: flex;
+    align-items: center;
+ }
+ .item__footer .item__avatar {
+    margin-left: 0.7rem;
+ }
+ .item__footer .item__avatar img {
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+ }
+ .item__footer .item__name {
+    font-weight: 700;
+    flex: 1;
+ }
+ .item__footer .btn {
+    color: white;
+    font-size: 1.6rem;
+    background-color: var(--color-btn);
+    border-radius: 8px;
+    padding: 1.8rem 1.2rem;
+    border: none;
+    cursor: pointer;
+ }
+
+ @media screen and (min-width: 768px) {
+    .card__items {
+        grid-template-columns:  1fr 1fr;
+    }
+ }
+
+ @media screen and (min-width: 1024px) {
+    .card__items {
+        grid-template-columns:  1fr 1fr 1fr;
+    } 
+ }
